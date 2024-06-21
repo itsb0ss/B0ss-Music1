@@ -1,13 +1,9 @@
-# PrimeMusic-Lavalink
-LAVALINK BOT MADE BY SHIVA.
-
-Fork the Repositry and add your bot token. Must turn on intents and run the code.
-Use /play to start playing the songs.
+# B0ss Music
+Music bot made by b0ss1, original code by GlaceYT.
 
 # Supports
 - YouTube
 - SoundCloud
 - Spotify
-
-Links / Text / Playlists
- 
+- Links
+- Playlists
