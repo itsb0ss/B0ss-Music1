@@ -125,11 +125,11 @@ async function play(client, interaction) {
 
 module.exports = {
     name: "play",
-    description: "Add options too",
+    description: "Start playing music!",
     permissions: "0x0000000000000800",
     options: [{
         name: 'name',
-        description: 'Enter song name / link or playlist',
+        description: 'Enter a song name, artist, links, or playlists.',
         type: ApplicationCommandOptionType.String,
         required: true
     }],
