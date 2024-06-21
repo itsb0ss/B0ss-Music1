@@ -35,7 +35,7 @@ try {
 await rest.put(Routes.applicationCommands(client.user.id), {
 body: await client.commands,
 });
-console.log('\x1b[36m%s\x1b[0m', '|    🚀 Watching client.guilds.cache.size Servers')
+console.log('\x1b[36m%s\x1b[0m', '|    🚀 Viewing ${client.guilds.cache.size} Servers')
 } catch (err) {
 console.log('\x1b[36m%s\x1b[0m', '|    ❌ Commands Failed To Load!');
 }
@@ -45,7 +45,7 @@ console.log('\x1b[32m%s\x1b[0m', `|    🌼 Logged in as ${client.user.username}
 
 const serverCount = client.guilds.cache.size;
 setInterval(() => client.user.setActivity({ 
-  name:`client.guilds.cache.size Servers`, 
+  name:`${client.guilds.cache.size} Servers`, 
   type: ActivityType.Watching }), 10000);
 client.errorLog = config.errorLog
   
