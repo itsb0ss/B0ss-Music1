@@ -5,9 +5,9 @@ const { queueNames } = require("./commands/play");
 function initializePlayer(client) {
     const nodes = [
         {
-            host: "54.36.225.156",
-            port: 2333,
-            password: "s4DarqP$&y",
+            host: "lava2.horizxon.studio",
+            port: 80,
+            password: "horizxon.studio",
             secure: false
         },
     ];
