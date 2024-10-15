@@ -6,13 +6,13 @@ const config = require("./config.js");
 
 function initializePlayer(client) {
     const nodes = config.nodes.map(node => ({
-        name: node.name,
-        host: node.host,
-        port: node.port,
-        password: node.password,
-        secure: node.secure,
+    name: "Working1",
+        host: "nodev4.fypmoon.org",
+        port: 1118,
+        password: "fypmoon.org",
         reconnectTimeout: 5000,
-        reconnectTries: Infinity
+        reconnectTries: Infinity,
+        secure: false
         
     }));
 
