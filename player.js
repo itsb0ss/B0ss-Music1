@@ -1,7 +1,6 @@
 const { Riffy } = require("riffy");
 const { EmbedBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle, AttachmentBuilder } = require("discord.js");
 const { queueNames, requesters } = require("./commands/play");
-const { mewcard } = require("mewcard");
 const config = require("./config.js");
 
 function initializePlayer(client) {
