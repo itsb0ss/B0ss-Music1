@@ -47,11 +47,10 @@ module.exports = async (client) => {
         return;
     }
 
-  const serverCount = client.guilds.cache.size;
-    setInterval(() => client.user.setActivity({ 
-        name: config.${client.guilds.cache.size} Servers, 
-        ActivityType.Watching 
-    }), 10000);
+   const serverCount = client.guilds.cache.size;
+setInterval(() => client.user.setActivity({ 
+ name:`${client.guilds.cache.size} Servers`, 
+  type: ActivityType.Watching }), 10000);
 
     client.errorLog = config.errorLog;
 };
