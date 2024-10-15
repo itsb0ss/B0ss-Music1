@@ -80,7 +80,7 @@ client.on("raw", (d) => {
 });
 
 client.login(config.TOKEN || process.env.TOKEN).catch((e) => {
-    console.log('TOKEN ERROR❌  - Turn On Intents or Reset New Token');
+    console.log('TOKEN ERROR FOUND❌  - Turn On Intents or Reset Your Token.');
 });
 
 const express = require("express");
@@ -91,7 +91,7 @@ app.get('/', (req, res) => {
     res.sendFile(imagePath);
 });
 app.listen(port, () => {
-    console.log(`🔗 Listening to GlaceYT : http://localhost:${port}`);
+    console.log(`🔗 Listening to B0ss : http://localhost:${port}`);
 });
 
 printWatermark();
