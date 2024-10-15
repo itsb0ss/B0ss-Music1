@@ -46,10 +46,11 @@ module.exports = async (client) => {
         console.error(`Invalid activity type: ${config.activityType}`);
         return;
     }
-    
+
+  const serverCount = client.guilds.cache.size;
     setInterval(() => client.user.setActivity({ 
-        name: config.activityName, 
-        type: activityType 
+        name: config.${client.guilds.cache.size} Servers, 
+        ActivityType.Watching 
     }), 10000);
 
     client.errorLog = config.errorLog;
