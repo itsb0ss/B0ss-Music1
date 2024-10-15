@@ -35,13 +35,13 @@ try {
 await rest.put(Routes.applicationCommands(client.user.id), {
 body: await client.commands,
 });
-console.log('\x1b[36m%s\x1b[0m', '|    🚀 Viewing ${client.guilds.cache.size} Servers')
+console.log('\x1b[36m%s\x1b[0m', '|    🚀 Loading Commands...')
 } catch (err) {
 console.log('\x1b[36m%s\x1b[0m', '|    ❌ Commands Failed To Load!');
 }
 })();
 
-console.log('\x1b[32m%s\x1b[0m', `|    🌼 Logged in as ${client.user.username}`);
+console.log('\x1b[32m%s\x1b[0m', `|    🌼 Welcome ${client.user.username}, B0ss Music© Is Online!`);
 
 const serverCount = client.guilds.cache.size;
 setInterval(() => client.user.setActivity({ 
